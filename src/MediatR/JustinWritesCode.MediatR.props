@@ -1,0 +1,26 @@
+<!--
+ * JustinWritesCode.MediatR copy.csproj
+ * 
+ *   Created: 2022-12-21-10:12:26
+ *   Modified: 2022-12-21-10:12:26
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project>
+  <ItemGroup>
+    <Using Include="MediatR" />
+    <Using Include="AutoMapper" />
+    <Using Include="Microsoft.EntityFrameworkCore.Abstractions" />
+    <Using Include="Microsoft.EntityFrameworkCore" />
+    <Using Include="JustinWritesCode.Abstractions" />
+    <Using Include="JustinWritesCode.EntityFrameworkCore.Abstractions" />
+    <Using Include="JustinWritesCode.MediatR.Abstractions" />
+    <Using Include="JustinWritesCode.MediatR.Commands" />
+    <Using Include="JustinWritesCode.MediatR.Queries" />
+    <Using Include="JustinWritesCode.MediatR.Notifications" />
+  </ItemGroup>
+</Project>
