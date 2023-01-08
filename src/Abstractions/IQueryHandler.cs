@@ -6,7 +6,7 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
@@ -15,10 +15,11 @@ using JustinWritesCode.Abstractions;
 
 namespace JustinWritesCode.MediatR.Handlers.Abstractions;
 
-public interface IQueryHandler<TQuery, TId, TDto> : IRequestHandler<TQuery, TDto>
+public interface IQueryHandler<TQuery, TId, TModel, TDto> : IRequestHandler<TQuery, TDto>
     where TQuery : IQuery<TId, TDto>
     where TId : IComparable, IEquatable<TId>
     where TDto : IIdentifiable<TId>
+    where TModel : IIdentifiable<TId>
 {
 
 }

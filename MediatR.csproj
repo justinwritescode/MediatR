@@ -1,0 +1,18 @@
+<!--
+ * MediatR.csproj
+ * 
+ *   Created: 2022-12-30-05:36:32
+ *   Modified: 2022-12-30-05:36:32
+ * 
+ *   Author: Justin Chase <justin@justinwritescode.com>
+ *   
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
+ *      License: MIT (https://opensource.org/licenses/MIT)
+-->
+
+<Project Sdk="Microsoft.Build.Traversal">
+  <ItemGroup>
+    <ProjectReference Include="./src/Abstractions/JustinWritesCode.MediatR.Abstractions.csproj" />
+    <ProjectReference Include="./src/MediatR/JustinWritesCode.MediatR.csproj" />
+  </ItemGroup>
+</Project>

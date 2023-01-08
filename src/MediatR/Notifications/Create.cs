@@ -6,14 +6,14 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
 namespace JustinWritesCode.MediatR.Notifications;
 using JustinWritesCode.MediatR.Abstractions;
 
-public class CreatedNotification<TId, TCreateDto, TDto> : ICreatedNotification<TId, TDto, TCreateDto>
+public record struct CreatedNotification<TId, TCreateDto, TDto> : ICreatedNotification<TId, TDto, TCreateDto>
     where TId : IComparable, IEquatable<TId>
 {
     public CreatedNotification() { }

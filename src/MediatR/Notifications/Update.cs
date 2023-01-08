@@ -6,13 +6,13 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
 namespace JustinWritesCode.MediatR.Notifications;
 
-public class UpdatedNotification<TDto> : IUpdatedNotification<TDto>
+public record struct UpdatedNotification<TDto> : IUpdatedNotification<TDto>
 {
     public UpdatedNotification(TDto updateDto)
     {

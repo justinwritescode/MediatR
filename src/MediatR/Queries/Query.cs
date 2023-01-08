@@ -6,7 +6,7 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
@@ -15,7 +15,7 @@ using System.Runtime.CompilerServices;
 
 namespace JustinWritesCode.MediatR.Queries;
 
-public class Query<TDto> : IQuery<TDto>
+public record struct Query<TDto> : IQuery<TDto>
 {
     public Query() { }
     public Query(Expression<Func<TDto, bool>> predicate, int pageNumber = 1, int pageSize = int.MaxValue)
@@ -30,7 +30,7 @@ public class Query<TDto> : IQuery<TDto>
     public int PageNumber { get; } = 1;
 }
 
-public class Query<TId, TDto> : IQuery<TId, TDto>
+public record struct Query<TId, TDto> : IQuery<TId, TDto>
     where TId : IComparable, IEquatable<TId>
     where TDto : IIdentifiable<TId>
 {

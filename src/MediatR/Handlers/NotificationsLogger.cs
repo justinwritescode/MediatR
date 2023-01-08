@@ -1,17 +1,17 @@
 namespace JustinWritesCode.MediatR.Notifications;
 using Microsoft.Extensions.Logging;
 
-public class NotificationsLogger<TNotification> : IRequestHandler<TNotification, Unit>
-    where TNotificatin : INotofication
+public class NotificationsLogger<TNotification> : global::MediatR.INotificationHandler<TNotification>
+    where TNotification : INotification
 {
-    private readonly ILogger<NotificationsLogger> _logger;
+    private readonly ILogger<NotificationsLogger<TNotification>> _logger;
 
-    public NotificationsLogger(ILogger<NotificationsLogger> logger)
+    public NotificationsLogger(ILogger<NotificationsLogger<TNotification>> logger)
     {
         _logger = logger;
     }
 
-    public Task<Unit> Handle(INotification notification, CancellationToken cancellationToken)
+    public Task Handle(TNotification notification, CancellationToken cancellationToken)
     {
         _logger.LogInformation("Notification: {Notification}", notification);
         return Task.FromResult(Unit.Value);

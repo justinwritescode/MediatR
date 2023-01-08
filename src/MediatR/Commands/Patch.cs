@@ -6,11 +6,12 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
 namespace JustinWritesCode.MediatR.Commands;
+#if NETSTANDARD2_0_OR_GREATER
 using Microsoft.AspNetCore.JsonPatch;
 
 public record struct PatchCommand<TId, TPatchDto, TDto>(JsonPatchDocument<TDto> Patch, TId Id) : IPatchCommand<TId, TPatchDto, TDto>
@@ -26,3 +27,4 @@ public record struct PatchCommand<TId, TPatchDto, TDto>(JsonPatchDocument<TDto> 
     public JsonPatchDocument<TDto> Patch { get; init; } = Patch;
     public TId Id { get; init; } = Id;
 }
+#endif

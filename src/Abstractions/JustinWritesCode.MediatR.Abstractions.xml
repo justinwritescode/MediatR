@@ -17,28 +17,28 @@
             <summary>IsDirtyString: true</summary>
         </member>
         <member name="F:ThisAssembly.Git.RepositoryUrl">
-            <summary>Repository URL: https://github.com/justinwritescode/justinwritescode.git</summary>
+            <summary>Repository URL: https://github.com/justinwritescode/MediatR.git</summary>
         </member>
         <member name="F:ThisAssembly.Git.Branch">
             <summary>Branch: main</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: fe18ce5</summary>
+            <summary>Commit: d9bb799</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: fe18ce5e0b0568698aeb10c3e4590a768480a7a3</summary>
+            <summary>Sha: d9bb7995969e1db0a76cca48320f0e0496b110ae</summary>
         </member>
         <member name="F:ThisAssembly.Git.CommitDate">
-            <summary>Commit date: 2022-12-03T02:36:24-05:00</summary>
+            <summary>Commit date: 2022-12-23T19:25:30-05:00</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 102</summary>
+            <summary>Commits on top of base version: 3</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
-            <summary>Tag: v0.0.1-102-gfe18ce5</summary>
+            <summary>Tag: </summary>
         </member>
         <member name="F:ThisAssembly.Git.BaseTag">
-            <summary>Base tag: v0.0.1</summary>
+            <summary>Base tag: </summary>
         </member>
         <member name="T:ThisAssembly.Git.BaseVersion">
             <summary>Provides access to the base version information used to determine the <see cref="T:ThisAssembly.Git.SemVer" />.</summary>      
@@ -50,7 +50,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.BaseVersion.Patch">
-            <summary>Patch: 1</summary>
+            <summary>Patch: 0</summary>
         </member>
         <member name="T:ThisAssembly.Git.SemVer">
             <summary>Provides access to SemVer information for the current assembly.</summary>
@@ -62,7 +62,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 103</summary>
+            <summary>Patch: 3</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>
@@ -71,7 +71,7 @@
             <summary>Label with dash prefix: </summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Source">
-            <summary>Source: Tag</summary>
+            <summary>Source: Default</summary>
         </member>
     </members>
 </doc>

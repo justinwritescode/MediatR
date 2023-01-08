@@ -1,8 +1,8 @@
 /*
- * Notification.cs
+ * IsExternalInit.cs
  *
- *   Created: 2022-12-21-10:14:07
- *   Modified: 2022-12-21-10:14:07
+ *   Created: 2022-12-26-10:32:43
+ *   Modified: 2022-12-26-10:32:44
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
@@ -10,4 +10,6 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
-namespace JustinWritesCode.MediatR.Notifications;
+namespace System.Runtime.CompilerServices;
+
+internal class IsExternalInit { }

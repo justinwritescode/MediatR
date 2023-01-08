@@ -6,7 +6,7 @@
  *
  *   Author: Justin Chase <justin@justinwritescode.com>
  *
- *   Copyright © 2022 Justin Chase, All Rights Reserved
+ *   Copyright © 2022-2023 Justin Chase, All Rights Reserved
  *      License: MIT (https://opensource.org/licenses/MIT)
  */
 
@@ -17,7 +17,6 @@ namespace JustinWritesCode.MediatR.Abstractions;
 
 public interface IQuery<TId, TDto> : IQueryBase<TDto>, IRequest<TDto>
     where TId : IComparable, IEquatable<TId>
-    where TDto : IIdentifiable<TId>
 {
 }
 
