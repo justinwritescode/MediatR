@@ -10,7 +10,7 @@
  *      License: MIT (https://opensource.org/licenses/MIT)
 -->
 
-<Project Sdk="Microsoft.Build.Traversal">
+<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
     <ProjectReference Include="./src/Abstractions/JustinWritesCode.MediatR.Abstractions.csproj" />
     <ProjectReference Include="./src/MediatR/JustinWritesCode.MediatR.csproj" />
