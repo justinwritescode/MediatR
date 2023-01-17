@@ -11,6 +11,11 @@
 -->
 
 <Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="MetapackageSdk" />
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <IsAtRoot>true</IsAtRoot>
+  </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="./src/Abstractions/JustinWritesCode.MediatR.Abstractions.csproj" />
     <ProjectReference Include="./src/MediatR/JustinWritesCode.MediatR.csproj" />
